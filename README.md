@@ -32,3 +32,31 @@ This project is a backend service built using **FastAPI** and **MongoDB Atlas**,
 ```bash
 git clone https://github.com/saqulain123/hrone-backend.git
 cd hrone-backend
+```
+
+### 2. Install Dependencies
+
+- pip install -r requirements.txt
+
+
+### 3. Create .env file
+
+```bash
+MONGODB_URL=mongodb+srv://mohammadsaqulain5:KNcXc3uXdpO5QOb9@cluster0.mbabzsy.mongodb.net/hrone_db?retryWrites=true&w=majority
+```
+
+### 4.Run Locally
+
+- uvicorn main:app --reload
+- Visit: http://localhost:8000/docs
+
+---
+
+## Deployment (Render)
+
+- The application is deployed on Render and accessible at:
+
+```bash
+ Live URL: https://hronetask.onrender.com
+ Swagger Docs: https://hronetask.onrender.com/docs
+ ```
