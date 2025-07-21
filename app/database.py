@@ -4,7 +4,12 @@ import os
 
 load_dotenv()
 
-client = MongoClient(os.getenv("MONGODB_URL"))
+client = MongoClient(
+    os.getenv("MONGODB_URL"),
+    tls=True,
+    tlsAllowInvalidCertificates=False
+)
+
 db = client['hrone_db']
 
 product_collection = db['products']
